@@ -61,3 +61,19 @@ footer p {
     margin: 0 auto;
 }
 
+@media only screen and (max-width: 768px) {
+    .job {
+        width: 95%;
+        padding: 15px;
+    }
+
+    header {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+}
+

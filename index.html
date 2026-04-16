@@ -2,20 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- These meta tags help describe the page to browsers and search engines -->
     <meta name="description" content="Sustainable Energy Solutions Company">
     <meta name="keywords" content="renewable energy, solar, wind">
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Kevin Devaiah Baliyamederira Vinod">
+    <!-- This viewport setting is what allows the layout to scale properly on phones and tablets -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Sustainable Energy Solutions</title>
 
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
 
-    <!-- Embedded CSS -->
+    <!-- Internal CSS is included because the assignment requires at least one example on each page -->
     <style>
+        /* The slogan is styled separately so it stands out from the background */
         .slogan {
             font-style: italic;
-            color: #6dad70;
+            color: #76fa7d;
         }
     </style>
 </head>
@@ -23,13 +27,17 @@
 <body>
 
 <header>
-    <!-- Logo image -->
-    <img src="images/green-energy-logo.webp" 
-         alt="Solar energy logo" class="logo">
+    <!-- The logo gives the company an identity at the top of the page.
+         Alt text is included so the image still has meaning for screen readers and if it fails to load. -->
+    <img src="images/green-energy-logo.webp" alt="Solar energy logo" class="logo">
 
+    <!-- The h1 is the main heading of the page and identifies the company clearly -->
     <h1>Sustainable Energy Solutions</h1>
+
+    <!-- The slogan supports branding and gives the homepage a more professional feel -->
     <p class="slogan">Powering a Greener Tomorrow</p>
 
+    <!-- Navigation is placed in the header so users can move to other pages -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -41,8 +49,8 @@
 </header>
 
 <main>
-
-    <!-- Inline CSS -->
+    <!-- This section introduces the company and explains what it does.
+         Inline CSS is used here only because the assignment requires at least one inline example. -->
     <section style="margin: 20px;">
         <h2>Welcome</h2>
         <p>
@@ -51,22 +59,24 @@
             while supporting communities with sustainable energy solutions.
         </p>
 
-        <!-- Main image -->
+        <!-- This image reinforces the clean-energy theme and makes the homepage less text-heavy -->
         <img src="images/main-logo-renewable-energies.avif" 
              alt="Wind turbines and solar panels" class="main-image">
     </section>
 
-    <!-- Search -->
+    <!-- A search box is included because it is a required homepage feature.
+         It just takes user to jobs page. -->
     <section>
         <h2>Search Opportunities</h2>
-        <form>
+        <form action="jobs.html" method="get">
             <label for="search">Search jobs:</label>
-            <input type="text" id="search" name="search">
+            <input type="text" id="search" name="search" placeholder="Search job titles">
             <button type="submit">Search</button>
         </form>
     </section>
 
-    <!-- Table -->
+    <!-- The table presents company growth to embolden possible applicants.
+         Rowspan and colspan are used to meet the requirement for merged table cells. -->
     <section>
         <h2>Our Growth</h2>
         <table>
@@ -92,7 +102,8 @@
         </table>
     </section>
 
-    <!-- Acknowledgement -->
+    <!-- This acknowledgement is included to meet the assignment requirement.
+         It is placed on the homepage so it is visible to all visitors. -->
     <section class="acknowledgement">
         <h2>Acknowledgement of Country</h2>
         <p>
@@ -101,10 +112,10 @@
             Strait Islander peoples through inclusive employment and sustainable partnerships.
         </p>
     </section>
-
 </main>
 
 <footer>
+    <!-- The footer gathers practical project links in one place -->
     <p>&copy; 2026 Sustainable Energy Solutions</p>
     <p>
         <a href="https://github.com/MinhSwin/COS10026-Applied_Web_Project_Part_1_of_2_-Group-Submission-.git" target="_blank">GitHub Repository</a> |

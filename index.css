@@ -1,18 +1,20 @@
-/* GENERAL */
-
+/* GENERAL PAGE STYLING
+   These rules establish the site's overall look and readability before styling individual sections. */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     line-height: 1.6;
 
-    /* Background image */
-    background-image: url("images/background\ image\ Wind\ turbines.jpg");
+    /* A fixed background image gives the page a stronger renewable-energy identity
+       without needing extra content in every section. */
+    background-image: url("images/background image Wind turbines.jpg");
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
 }
 
-/* HEADER */
-
+/* HEADER
+   The header uses a dark green overlay so white text stays readable over the background theme. */
 header {
     background-color: rgba(27, 94, 32, 0.9);
     color: white;
@@ -20,34 +22,40 @@ header {
     padding: 20px;
 }
 
-/* Logo */
+/* The logo is kept small enough not to dominate the page heading,
+   and rounded corners soften the visual style slightly. */
 .logo {
     width: 120px;
     border-radius: 10px;
 }
 
-/* Navigation */
+/* NAVIGATION
+   The list styling is removed because this is being used as a menu, not as a normal bulleted list. */
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
+/* Inline-block places the menu items side by side while still allowing margin spacing. */
 nav ul li {
     display: inline-block;
     margin: 10px;
 }
 
+/* Links are styled plainly so the menu feels clean */
 nav a {
     color: white;
     text-decoration: none;
 }
 
+/* The hover underline gives a simple visual cue that the links are interactive. */
 nav a:hover {
     text-decoration: underline;
 }
 
-/* MAIN */
-
+/* MAIN CONTENT
+   A semi-transparent white panel improves contrast and readability against the photo background. */
 main {
     background-color: rgba(255, 255, 255, 0.9);
     margin: 20px;
@@ -55,7 +63,8 @@ main {
     border-radius: 10px;
 }
 
-/* Image */
+/* The main image is responsive so it scales down on smaller screens.
+   The max-width prevents it from becoming too wide on large screens. */
 .main-image {
     width: 100%;
     max-width: 600px;
@@ -64,33 +73,35 @@ main {
     border-radius: 10px;
 }
 
-/* TABLE */
-
+/* TABLE
+   The table spans the available width */
 table {
     width: 100%;
     border-collapse: collapse;
 }
 
+/* Borders and padding make the data easier to read and separate visually. */
 th, td {
     border: 1px solid black;
     padding: 10px;
     text-align: center;
 }
 
+/* The caption acts like a title for the table, so it is emphasised slightly. */
 caption {
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-/* FORM */
-
+/* FORM
+   Inputs and buttons share spacing so the search box feels cleaner. */
 input, button {
     padding: 8px;
     margin: 5px;
 }
 
-/* ACKNOWLEDGEMENT */
-
+/* ACKNOWLEDGEMENT SECTION
+   This section is highlighted differently so it stands out. */
 .acknowledgement {
     background-color: #e8f5e9;
     border-left: 5px solid green;
@@ -98,8 +109,8 @@ input, button {
     margin-top: 20px;
 }
 
-/* FOOTER */
-
+/* FOOTER
+   The footer repeats the green brand colour to visually close the page. */
 footer {
     background-color: #2e7d32;
     color: white;
@@ -107,14 +118,17 @@ footer {
     padding: 10px;
 }
 
-/* RESPONSIVE */
-
+/* RESPONSIVE DESIGN
+   On smaller screens the horizontal menu would feel cramped,
+   so the links stack vertically for easier tapping and reading. */
 @media (max-width: 768px) {
     nav ul li {
         display: block;
     }
 }
 
+/* On very small screens the header text is reduced slightly
+   so it fits more comfortably without wrapping awkwardly. */
 @media (max-width: 480px) {
     header {
         font-size: 14px;

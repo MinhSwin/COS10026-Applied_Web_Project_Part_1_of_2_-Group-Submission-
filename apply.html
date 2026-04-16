@@ -11,20 +11,36 @@
 
 </head>
 <body>
-    <h1 style="color: blue;">Apply to G03</h1>
+    
+    <header>
+        <img id="logo" src="images/green-energy-logo.webp" 
+         alt="Company Logo" class="logo">
+        <h1>Apply to G03</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="job.html">Jobs</a></li>
+                <li><a href="apply.html">Apply</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
 
         <!--name remember to remove bluds-->
-        <fieldset class="names">
-            <legend>Names</legend>
-            <label class="bluds" for="first-name">First Name</label>
+        <fieldset class="identity">
+            <legend>Identification</legend>
+            <label for="job-ref">Job Reference Number</label>
+            <input type="text" id="job-ref" name="job-ref" minlength="5" maxlength="5" required>
+
+            <label for="first-name">First Name</label>
             <input type="text" pattern="[A-Za-z]+" id="first-name" name="first-name" maxlength="20" required>
 
-            <label class="bluds" for="last-name">Last Name</label>
+            <label for="last-name">Last Name</label>
             <input type="text" pattern="[A-Za-z]+" id="last-name" name="last-name" maxlength="20" required>
 
-            <p><label class="bluds" for="date-of-birth">Date of Birth</label></p>
+            <p><label for="date-of-birth">Date of Birth</label></p>
             <input type="text" id="date-of-birth" name="date-of-birth" placeholder="dd/mm/yyyy" pattern="\d{1,2}\/\d{1,2}\/\d{4}" required>
             
             <fieldset>
@@ -82,8 +98,9 @@
             <textarea name="other" id="other" placeholder="Enter other skills here"></textarea>
         </fieldset>
         
-        <input type="submit" value="submit">
-        <input type="reset" value="reset">
+        <div class="end-button"><input  type="submit" value="submit">
+        <input type="reset" value="reset"></div>
+        
     </form>
 
 

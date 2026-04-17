@@ -9,15 +9,12 @@ aside {
 }
 
 header h1 {
-    text-align: center;
     margin-bottom: 15px;
     color: white;
 }
 
-header h1 {
+header {
     text-align: center;
-    margin-bottom: 15px;
-    color: white;
 }
 
 body {
@@ -27,7 +24,7 @@ body {
     padding: 20px;
 }
 
-h1, h2, h3, h4 {
+h2, h3, h4 {
     color: green;
     margin-bottom: 10px;
 }

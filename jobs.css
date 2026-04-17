@@ -8,9 +8,16 @@ aside {
     background-color: lightgreen;
 }
 
-header {
+header h1 {
     text-align: center;
     margin-bottom: 15px;
+    color: white;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: white;
 }
 
 body {

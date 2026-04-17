@@ -74,6 +74,8 @@ textarea {
 }
 
 /* reset and submit*/
+
+/* div for buttons*/
 .end-button {
     display: inline-block;
     margin: 10px;

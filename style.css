@@ -13,7 +13,7 @@ header {
     width: 128px;
     border-radius: 10px;
 }
-
+/* making nav bar be in the same line*/
 nav ul {
     list-style: none;
     padding: 0;

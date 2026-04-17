@@ -16,6 +16,21 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+nav ul li {
+    border: 1px black solid;
+    border-radius: 10px;
+    background-color: white;
+    padding: 5px;
+    transition: padding 0.5s;
+}
+
+nav ul li:hover {
+    border: 1px black solid;
+    border-radius: 10px;
+    background-color: red;
+    padding: 10px;
+}
+
 /* Using form as container*/
 form {
     display: flex;
@@ -47,11 +62,17 @@ form {
     display: flex;
     flex-direction: column;
     width: 20%;
-    height: 500px;
+    height: 200px;
 }
 .skills label {
     color: darkblue;
 }
+
+textarea {
+    width: 15em;
+    height: 5em;
+}
+
 /* reset and submit*/
 .end-button {
     display: inline-block;

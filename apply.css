@@ -76,15 +76,16 @@ textarea {
     height: 50px;
     text-align: center;
     font-size: 1.5em;
+    /* the width change takes 0.5s*/
     transition: width 0.5s;
 }
-
+/* when the submit is hoverd over the width increases and the background changes colour*/
 #submit-but:hover {
     background-color: lightgreen;
     width: 110px;
 }
 
-
+/* when the reset is hoverd over the width increases and the background changes colour*/
 #reset-but {
     background-color: red;
     width: 100px;

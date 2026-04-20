@@ -1,26 +1,16 @@
-/* GENERAL PAGE STYLING
-   These rules establish the site's overall look and readability before styling individual sections. */
+/* GENERAL PAGE STYLING */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     line-height: 1.6;
 
-    /* A fixed background image gives the page a stronger renewable-energy identity
-       without needing extra content in every section. */
+    /* A fixed background image */
     background-image: url("images/background image Wind turbines.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
 
-/* HEADER
-   The header uses a dark green overlay so white text stays readable over the background theme. */
-header {
-    background-color: rgba(27, 94, 32, 0.9);
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
 
 /* The logo is kept small enough not to dominate the page heading,
    and rounded corners soften the visual style slightly. */
@@ -29,19 +19,6 @@ header {
     border-radius: 10px;
 }
 
-/* NAVIGATION
-   The list styling is removed because this is being used as a menu, not as a normal bulleted list. */
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* Inline-block places the menu items side by side while still allowing margin spacing. */
-nav ul li {
-    display: inline-block;
-    margin: 10px;
-}
 
 /* Links are styled plainly so the menu feels clean */
 nav a {
@@ -116,21 +93,4 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-}
-
-/* RESPONSIVE DESIGN
-   On smaller screens the horizontal menu would feel cramped,
-   so the links stack vertically for easier tapping and reading. */
-@media (max-width: 768px) {
-    nav ul li {
-        display: block;
-    }
-}
-
-/* On very small screens the header text is reduced slightly
-   so it fits more comfortably without wrapping awkwardly. */
-@media (max-width: 480px) {
-    header {
-        font-size: 14px;
-    }
 }

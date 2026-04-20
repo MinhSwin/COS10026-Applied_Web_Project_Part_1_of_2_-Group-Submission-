@@ -85,7 +85,7 @@ textarea {
     width: 110px;
 }
 
-/* when the reset is hoverd over the width increases and the background changes colour*/
+
 #reset-but {
     background-color: red;
     width: 100px;
@@ -94,11 +94,12 @@ textarea {
     font-size: 1.5em;
     transition: width 0.5s;
 }
-
+/* when the reset is hoverd over the width increases and the background changes colour*/
 #reset-but:hover {
     background-color: lightcoral;
     width: 110px;
 }
+
 
 
 

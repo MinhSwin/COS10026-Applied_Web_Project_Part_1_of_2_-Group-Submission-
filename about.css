@@ -6,7 +6,7 @@ author: [Sereyboth Sok]
 
 created: [8/03/2026]
 
-last modified: [14/04/2026]
+last modified: [17/04/2026]
 
 description: [Refers to about.html page. For styling the about.html]
 
@@ -46,14 +46,13 @@ ul {
     list-style-type: square;
     padding-left: 30px;
 }
-
-/* Logo */
-.logo 
-{
-    width: 60px;
-    border-radius: 10px;
-    margin-right: 6000px;  /* pushes it left */
+.about-list {
+    text-align: center;
+    list-style-position: inside;
+    padding-left: 0;
 }
+
+
 
 /* Navigation */
 nav ul {
@@ -78,12 +77,58 @@ nav a:hover {
 /* ACKNOWLEDGEMENT */
 
 .acknowledgement {
-    background-color: #e8f5e9;
+    
     border-left: 5px solid green;
     padding: 15px;
     margin-top: 20px;
 }
+/* Table */
 
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.table th,
+.table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.table th {
+    font-weight: bold;
+}
+/* Caption spacing */
+.table caption {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Center the image */
+.web-group {
+    display: block;
+    margin: 10px auto;
+    width: 600px;
+    height: 400px;
+}
+
+/* Improve spacing */
+section {
+    margin-bottom: 20px;
+}
+
+/* Definition list spacing */
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
 /* FOOTER */
 
 footer {

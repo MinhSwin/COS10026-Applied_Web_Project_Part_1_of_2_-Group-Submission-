@@ -43,6 +43,9 @@ form {
 .location label {
     color: green;
 }
+
+
+
 /* skills portion*/
 .skills {
     display: flex;
@@ -96,20 +99,21 @@ textarea {
     width: 110px;
 }
 
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 
 
 @media only screen and (max-width: 768px) {
-    
+    /*Makes the buttons smaller and font smaller for smaller screens*/
     #reset-but , #submit-but{
         width: 90px;
         height: 50px;
         font-size: 1em;
+    }
+    /*aligns contacts in a column for screens with a width of 768px*/
+    .contact {
+        display: flex;
+        flex-direction: column;
     }
 }
 
